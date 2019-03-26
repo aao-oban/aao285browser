@@ -1,6 +1,38 @@
-<div style="display: inline; border: none; height: 24px; padding: 0;">
-<iframe src="https://free.timeanddate.com/clock/i6oubtv2/n136/fn17/fs18/tcf90/pc9f0/ftbi/tt0/tw0/tm2/th1/ta1" frameborder="0" width="303" height="24"  ></iframe>
-</div>
-<div>
-<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=6j0e9cmiuvqgs63rd60qeqsaq0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=UTC" style="width:100%;height:100%; frameborder="0" scrolling="no"></iframe>
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getTimezoneOffset();
+  var cad = "";
+  if (n > 0)
+  {
+	cad = "You are delayed with " + n/60 + " hours (GMT -"+ n/60 +")";
+  }
+  if (n < 0)
+  {
+	cad = "You are ahead with " + n/60 + " hours (GMT +"+ n/60 +")";
+  }
+  if (n < 0)
+  {
+	cad = "You are at the same time";
+  }
+  
+	document.getElementById("demo").innerHTML = cad;
+  
+}
+</script>
+
+<div style="text-align: center;">
+<iframe
+ src="https://free.timeanddate.com/clock/i6oubtv2/n136/fn17/fs18/tcf90/pc9f0/ftbi/tt0/tw0/tm2/th1/ta1"
+ frameborder="0" height="24" width="303">
+ </iframe>
+ <h3>Events shown in time zone: Greenwich Mean Time (GMT+00:00)</h3>
+ <p>to know the difference with your time <button onclick="myFunction()">Click here</button> </p>
+<p id="demo"></p>
+ 
+ </div>
+<div style="text-align: center;">
+<iframe
+ src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=6j0e9cmiuvqgs63rd60qeqsaq0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=Etc%2FGMT" style="border-width:0" width="70%" height="100%" frameborder="0" scrolling="no">
+</iframe>
 </div>
