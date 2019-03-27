@@ -5,15 +5,15 @@ function myFunction() {
   var cad = "";
   if (n > 0)
   {
-	cad = "You are delayed with " + n/60 + " hours (GMT -"+ n/60 +")";
+	cad = "<font color='red'> You are delayed with " + n/60 + " hours (GMT-"+ n/60 +")</font>";
   }
   if (n < 0)
   {
-	cad = "You are ahead with " + n/60 + " hours (GMT +"+ n/60 +")";
+	cad = "<font color='red'> You are ahead with " + n/60 + " hours (GMT+"+ n/60 +")</font>";
   }
   if (n < 0)
   {
-	cad = "You are at the same time";
+	cad = "<font color='red'> You are at the same time</font>";
   }
   
 	document.getElementById("demo").innerHTML = cad;
@@ -22,12 +22,10 @@ function myFunction() {
 </script>
 
 <div style="text-align: center;">
-<iframe
- src="https://free.timeanddate.com/clock/i6oubtv2/n136/fn17/fs18/tcf90/pc9f0/ftbi/tt0/tw0/tm2/th1/ta1"
- frameborder="0" height="24" width="303">
- </iframe>
+<iframe src="https://freesecure.timeanddate.com/clock/i6owzv3b/fn6/fs16/fcd9b134/tc000/ftb/bas2/bat1/bacfff/pa8/th2" frameborder="0" width="112" height="39"></iframe>
+
  <h3>Events shown in time zone: Greenwich Mean Time (GMT+00:00)</h3>
- <p id="demo">to know the difference with your time <button onclick="myFunction()">Click here</button> </p>
+ <p id="demo"><font color="blue">To know the difference with your time </font><button onclick="myFunction()">Click here</button> </p>
 <P>If you want to add events to the calendar, write me an email to oban.bere@gmail.com</p>
  
  </div>
